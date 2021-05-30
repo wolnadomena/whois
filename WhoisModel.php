@@ -3,6 +3,14 @@
  * https://whois.wolnadomena.pl/whois.php?domain=softreck.com
  * http://localhost:8080/whois.php?domain=softreck.com
  */
+// Load composer framework
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    require(__DIR__ . '/vendor/autoload.php');
+}
+
+use phpWhois\Whois;
+
+error_reporting(E_ERROR | E_PARSE);
 
 /**
  * @param array $params
