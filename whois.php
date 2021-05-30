@@ -3,7 +3,7 @@
  * https://whois.wolnadomena.pl/whois.php?domain=softreck.com
  * http://localhost:8080/whois.php?domain=softreck.com
  */
-//error_reporting(E_ERROR | E_PARSE);
+
 
 // Load composer framework
 if (file_exists(__DIR__ . '/vendor/autoload.php')) {
@@ -18,6 +18,8 @@ $domain = '';
 $whois = [];
 $message = '';
 $status = false;
+
+error_reporting(E_ERROR | E_PARSE);
 
 try {
 
