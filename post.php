@@ -57,7 +57,7 @@ try {
  <div>
     <a href='$url' target='_blank'> $domain</a> 
     -
-    <a class='whois' href='https://www.wolnadomena.pl/whois.php?domain=$domain' target='_blank'> - </a>
+    <a class='whois' href='https://whois.wolnadomena.pl/whois.php?domain=$domain' target='_blank'> - </a>
 </div>
             ";
             });
