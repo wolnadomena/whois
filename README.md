@@ -1,4 +1,4 @@
-# whois
+# [whois.wolnadomena.pl](https://whois.wolnadomena.pl/)
 Check whois of domain
 
 [wolnadomena/whois: Check info/whois about domain](https://github.com/wolnadomena/whois/)
