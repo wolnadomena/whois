@@ -47,9 +47,9 @@ require("post.php");
         DEV:
         <a href="https://github.com/wolnadomena/www" target='_blank'>source code</a>
         |
-        <a href="https://whois.wolnadomena.pl/index.php?domains=softreck.com" target='_blank'> production </a>
+        <a href="https://whois.wolnadomena.pl/whois.php?domain=softreck.com" target='_blank'> production </a>
         |
-        <a href="http://localhost:8080/index.php?domains=softreck.com" target='_blank'> localhost </a>
+        <a href="http://localhost:8080/whois.php?domain=softreck.com" target='_blank'> localhost </a>
 
     </div>
 

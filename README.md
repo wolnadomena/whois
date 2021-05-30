@@ -14,7 +14,9 @@ Check whois of domain
     curl https://apifunc.github.io/php/apifunc.php --output apifunc.php
 
 # First Steps
+
 ## on linux
+
 ### install
     sh .apicra\install.sh
 
@@ -30,7 +32,6 @@ Check whois of domain
     .apicra\start.bat
 
 ### tests
-
     .apicra\test.bat
 
 ---
