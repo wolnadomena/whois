@@ -1,6 +1,7 @@
 # whois
 Check whois of domain
 
+[wolnadomena/whois: Check info/whois about domain](https://github.com/wolnadomena/whois/)
 
     https://github.com/wolnadomena/whois.git
 
@@ -12,13 +13,24 @@ Check whois of domain
 
     curl https://apifunc.github.io/php/apifunc.php --output apifunc.php
 
+# First Steps
+## on linux
+### install
+    sh .apicra\install.sh
 
-## First Steps
+### start
+    sh .apicra\start.sh
 
-install
+## on windows
 
+### install
     .apicra\install.bat
 
-start    
+### start    
     .apicra\start.bat
 
+
+
+---
+
++ [edit](https://github.com/wolnadomena/whois/edit/main/README.md)
