@@ -1,6 +1,6 @@
 <?php
 /*
- * https://www.wolnadomena.pl/index.php?domain=softreck.com
+ * https://whois.wolnadomena.pl/index.php?domain=softreck.com
  * http://localhost:8080/index.php?domain=softreck.com
  */
 require("post.php");

@@ -29,7 +29,9 @@ Check whois of domain
 ### start    
     .apicra\start.bat
 
+### tests
 
+    .apicra\test.bat
 
 ---
 

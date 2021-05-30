@@ -1,6 +1,6 @@
 <?php
 /*
- * https://www.wolnadomena.pl/whois.php?domain=softreck.com
+ * https://whois.wolnadomena.pl/whois.php?domain=softreck.com
  * http://localhost:8080/whois.php?domain=softreck.com
  */
 
@@ -13,11 +13,11 @@ use phpWhois\Whois;
 
 require("apifunc.php");
 
-header('Content-Type: application/json');
+$message = '';
 
 try {
-    $domain = $_GET['domain'];
-//    $domain = 'softreck.com';
+//    $domain = $_GET['domain'];
+    $domain = 'softreck.com';
 
     if (empty($domain)) {
         throw new Exception("domain is empty");
@@ -25,26 +25,28 @@ try {
 
     $domain = strtolower($domain);
 
-    apifunc([
-        'https://php.defjson.com/def_json.php'
-    ], function () {
+    global $domain;
 
-        global $domain;
-
-        $whois = new Whois();
-        $result = $whois->lookup($domain, false);
-
-        echo def_json("", [
-            "whois" => $result['regrinfo'],
-            "domain" => $domain
-        ]);
-    });
+    $whois = new Whois();
+    $result = $whois->lookup($domain, false);
 
 } catch (Exception $e) {
     // Set HTTP response status code to: 500 - Internal Server Error
-    echo def_json("", [
-            "message" => $e->getMessage(),
-            "domain" => $domain
-        ]
-    );
+    $message = $e->getMessage();
 }
+
+
+header('Content-Type: application/json');
+
+apifunc([
+    'https://php.defjson.com/def_json.php'
+], function () {
+
+    global $result, $domain;
+
+    echo def_json("", [
+        "whois" => $result['regrinfo'],
+        "message" => $result['regrinfo'],
+        "domain" => $domain
+    ]);
+});
